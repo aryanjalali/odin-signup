@@ -1,0 +1,8 @@
+:root {
+     --background-tone-color:#596D48;
+     --border-color:#E5E7EB;
+}
+
+img {
+     max-width: 100%;
+}
