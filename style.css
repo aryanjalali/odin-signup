@@ -10,7 +10,7 @@
      --background-tone-color:#596D48;
      --border-color:#E5E7EB;
      --main-text-color:black;
-     --logo-size:5rem;
+     --logo-size:8rem;
 }
 
 img {
@@ -49,7 +49,17 @@ body {
 }
 
 .logo {
-     padding:30% 0;
+     padding:0.2rem;
+     background-color: rgba(0,0,0, 0.4);
+     position:relative;
+     left:0;
+     right:0;
+     margin-left:auto;
+     margin-right:auto;
+     top:23vh;
+     display:flex;
+     justify-content: center;
+     align-items: center;
 }
 
 .logo img{
@@ -81,20 +91,33 @@ body {
 }
 
 #main-right > * {
-     padding:1em 2em;
+     padding:1rem 2rem;
 }
 
 #hook-text {
      font-size:1.5rem;
      line-height:1.6rem;
-     padding-bottom:1.5em;
+     width:75%;
 }
 
 .create-account-btn {
      width:200px;
      padding:0;
-     margin: 1em 0 0 2em;
+     margin: 1rem 0 0 2rem;
      border-radius:5px;
+     border:none;
+     background-color:var(--background-tone-color);
+     color:white;
+     font-size:1rem;
+     font-weight: bolder;
+}
+
+.btn:hover {
+     opacity:0.7;
+}
+
+.btn:active {
+     transform:scale(1.05);
 }
 
 #log-in {
@@ -109,6 +132,44 @@ body {
 /* Form */
 #main-form {
      background:white;
+     display:flex;
+     flex-wrap:wrap;
+     gap:2px;
+     row-gap:5px;
+     padding-bottom:2rem;
 }
 
+#main-form h2 {
+     margin-top:0.2rem;
+     width:100%;
+}
+
+#main-form div {
+     flex:0 1 45%;
+}
+
+
+#main-form label {
+     color:grey;
+     font-weight:bolder;
+     font-size:0.6rem;
+     letter-spacing:0.1rem;
+}
+
+#main-form input {
+     border:var(--border-color) 1.5px solid;
+     border-radius: 5px;
+     width:20vw;
+     display:block;
+     box-sizing:border-box;
+     padding:10px;
+     margin:0;
+     font-size:1rem;
+     background-color:rgb(250, 250, 250);
+}
+
+#main-form input:focus {
+     border: steelblue 1.5px solid;
+     outline:none;
+}
 
